@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLController">
+    <children>
+      <ImageView cache="true" fitHeight="750.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/fundo.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.33" contrast="-0.07" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="200.0" layoutX="400.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/mesa.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.36" contrast="-0.02" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="leitor1" fitHeight="50.0" fitWidth="50.0" layoutX="220.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/leitor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leitor2" fitHeight="50.0" fitWidth="50.0" layoutX="220.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/leitor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leitor3" fitHeight="50.0" fitWidth="50.0" layoutX="220.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/leitor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leitor4" fitHeight="50.0" fitWidth="50.0" layoutX="220.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/leitor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leitor5" fitHeight="50.0" fitWidth="50.0" layoutX="220.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/leitor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="escritor1" fitHeight="50.0" fitWidth="50.0" layoutX="715.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/escritor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="escritor2" fitHeight="50.0" fitWidth="50.0" layoutX="715.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/escritor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="escritor3" fitHeight="50.0" fitWidth="50.0" layoutX="715.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/escritor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="escritor4" fitHeight="50.0" fitWidth="50.0" layoutX="715.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/escritor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="escritor5" fitHeight="50.0" fitWidth="50.0" layoutX="715.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/escritor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lampada4" fitHeight="50.0" fitWidth="37.0" layoutX="722.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/lampada.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lampada3" fitHeight="50.0" fitWidth="37.0" layoutX="722.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/lampada.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lampada2" fitHeight="50.0" fitWidth="37.0" layoutX="722.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/lampada.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lampada1" fitHeight="50.0" fitWidth="37.0" layoutX="722.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/lampada.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="lampada5" fitHeight="50.0" fitWidth="37.0" layoutX="722.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/lampada.png" />
+         </image>
+      </ImageView>
+        <Button fx:id="iniciar" layoutX="278.0" layoutY="10.0" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: rgba(0, 0, 0, 0);">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/iniciar.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="reset" layoutX="508.0" layoutY="10.0" onAction="#handleButtonActionReset" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: rgba(0, 0, 0, 0);">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/reset.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Slider fx:id="sliderLeitor1Le" layoutX="60.0" layoutY="87.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderLeitor2Le" layoutX="60.0" layoutY="205.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderLeitor3Le" layoutX="60.0" layoutY="325.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderLeitor4Le" layoutX="60.0" layoutY="452.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderLeitor5Le" layoutX="60.0" layoutY="578.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor1Escreve" layoutX="832.0" layoutY="87.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor2Escreve" layoutX="832.0" layoutY="205.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor3Escreve" layoutX="832.0" layoutY="325.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor4Escreve" layoutX="832.0" layoutY="452.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor5Escreve" layoutX="832.0" layoutY="578.0" max="5.0" min="1.0" />
+      <Button fx:id="pauseLeitor1" layoutX="65.0" layoutY="125.0" mnemonicParsing="false" onAction="#pauseLeitor1" text="Pause" />
+      <Button fx:id="pauseLeitor2" layoutX="60.0" layoutY="230.0" mnemonicParsing="false" onAction="#pauseLeitor2" text="Pause" />
+      <Button fx:id="pauseLeitor3" layoutX="60.0" layoutY="350.0" mnemonicParsing="false" onAction="#pauseLeitor3" text="Pause" />
+      <Button fx:id="pauseLeitor4" layoutX="60.0" layoutY="477.0" mnemonicParsing="false" onAction="#pauseLeitor4" text="Pause" />
+      <Button fx:id="pauseLeitor5" layoutX="60.0" layoutY="603.0" mnemonicParsing="false" onAction="#pauseLeitor5" text="Pause" />
+      <Button fx:id="pauseEscritor1" layoutX="832.0" layoutY="112.0" mnemonicParsing="false" onAction="#pauseEscritor1" text="Pause" />
+      <Button fx:id="pauseEscritor2" layoutX="832.0" layoutY="230.0" mnemonicParsing="false" onAction="#pauseEscritor2" text="Pause" />
+      <Button fx:id="pauseEscritor3" layoutX="832.0" layoutY="350.0" mnemonicParsing="false" onAction="#pauseEscritor3" text="Pause" />
+      <Button fx:id="pauseEscritor4" layoutX="832.0" layoutY="477.0" mnemonicParsing="false" onAction="#pauseEscritor4" text="Pause" />
+      <Button fx:id="pauseEscritor5" layoutX="832.0" layoutY="603.0" mnemonicParsing="false" onAction="#pauseEscritor5" text="Pause" />
+      <Button fx:id="retomaLeitor1" layoutX="136.0" layoutY="125.0" mnemonicParsing="false" onAction="#retomaLeitor1" text="Retoma" />
+      <Button fx:id="retomaLeitor2" layoutX="136.0" layoutY="230.0" mnemonicParsing="false" onAction="#retomaLeitor2" text="Retoma" />
+      <Button fx:id="retomaLeitor3" layoutX="136.0" layoutY="350.0" mnemonicParsing="false" onAction="#retomaLeitor3" text="Retoma" />
+      <Button fx:id="retomaLeitor4" layoutX="136.0" layoutY="477.0" mnemonicParsing="false" onAction="#retomaLeitor4" text="Retoma" />
+      <Button fx:id="retomaLeitor5" layoutX="136.0" layoutY="603.0" mnemonicParsing="false" onAction="#retomaLeitor5" text="Retoma" />
+      <Button fx:id="retomaEscritor1" layoutX="906.0" layoutY="112.0" mnemonicParsing="false" onAction="#retomaEscritor1" text="Retoma" />
+      <Button fx:id="retomaEscritor2" layoutX="906.0" layoutY="230.0" mnemonicParsing="false" onAction="#retomaEscritor2" text="Retoma" />
+      <Button fx:id="retomaEscritor3" layoutX="906.0" layoutY="350.0" mnemonicParsing="false" onAction="#retomaEscritor3" text="Retoma" />
+      <Button fx:id="retomaEscritor4" layoutX="906.0" layoutY="477.0" mnemonicParsing="false" onAction="#retomaEscritor4" text="Retoma" />
+      <Button fx:id="retomaEscritor5" layoutX="906.0" layoutY="603.0" mnemonicParsing="false" onAction="#retomaEscritor5" text="Retoma" />
+      <Slider fx:id="sliderLeitor1Utiliza" layoutX="60.0" layoutY="67.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderLeitor2Utiliza" layoutX="60.0" layoutY="184.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderLeitor3Utiliza" layoutX="60.0" layoutY="304.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderLeitor4Utiliza" layoutX="60.0" layoutY="431.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderLeitor5Utiliza" layoutX="60.0" layoutY="558.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor1Obtem" layoutX="832.0" layoutY="67.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor2Obtem" layoutX="832.0" layoutY="185.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor3Obtem" layoutX="832.0" layoutY="305.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor4Obtem" layoutX="832.0" layoutY="431.0" max="5.0" min="1.0" />
+      <Slider fx:id="sliderEscritor5Obtem" layoutX="832.0" layoutY="558.0" max="5.0" min="1.0" />
+      <Label layoutX="8.0" layoutY="183.0" prefHeight="20.0" prefWidth="57.0" text="UTILIZA" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="8.0" layoutY="303.0" prefHeight="17.0" prefWidth="50.0" text="UTILIZA" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="6.0" layoutY="428.0" prefHeight="20.0" prefWidth="57.0" text="UTILIZA" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="6.0" layoutY="555.0" prefHeight="20.0" prefWidth="57.0" text="UTILIZA" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="13.0" layoutY="84.0" prefHeight="25.0" prefWidth="37.0" text="PEGA" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="204.0" prefHeight="20.0" prefWidth="19.0" text="LE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="324.0" prefHeight="17.0" prefWidth="25.0" text="LE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="451.0" prefHeight="17.0" prefWidth="19.0" text="LE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="577.0" prefHeight="17.0" prefWidth="19.0" text="LE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="66.0" prefHeight="17.0" prefWidth="47.0" text="OBTEM" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="183.0" prefHeight="17.0" prefWidth="47.0" text="OBTEM" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="304.0" prefHeight="17.0" prefWidth="47.0" text="OBTEM" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="430.0" prefHeight="17.0" prefWidth="47.0" text="OBTEM" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="557.0" prefHeight="17.0" prefWidth="47.0" text="OBTEM" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="86.0" prefHeight="20.0" prefWidth="57.0" text="ESCREVE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="204.0" prefHeight="17.0" prefWidth="57.0" text="ESCREVE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="324.0" prefHeight="17.0" prefWidth="57.0" text="ESCREVE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="451.0" prefHeight="17.0" prefWidth="57.0" text="ESCREVE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="777.0" layoutY="577.0" prefHeight="17.0" prefWidth="57.0" text="ESCREVE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="6.0" layoutY="63.0" prefHeight="20.0" prefWidth="50.0" text="UTILIZA" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fx:id="livroEscrevendo1" fitHeight="62.0" fitWidth="93.0" layoutX="508.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroEscrevendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livroEscrevendo2" fitHeight="62.0" fitWidth="93.0" layoutX="508.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroEscrevendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livroEscrevendo5" fitHeight="62.0" fitWidth="93.0" layoutX="508.0" layoutY="577.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroEscrevendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livroEscrevendo3" fitHeight="62.0" fitWidth="93.0" layoutX="508.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroEscrevendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livroEscrevendo4" fitHeight="62.0" fitWidth="93.0" layoutX="508.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroEscrevendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livroLendo1" fitHeight="52.0" fitWidth="86.0" layoutX="278.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroLendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livroLendo2" fitHeight="52.0" fitWidth="86.0" layoutX="278.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroLendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livroLendo3" fitHeight="52.0" fitWidth="86.0" layoutX="278.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroLendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livroLendo4" fitHeight="52.0" fitWidth="86.0" layoutX="278.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroLendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livroLendo5" fitHeight="52.0" fitWidth="86.0" layoutX="278.0" layoutY="577.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/livroLendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tutorial" fitHeight="750.0" fitWidth="1039.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/tutorial.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonContinuar" layoutX="409.0" layoutY="650.0" mnemonicParsing="false" onAction="#buttonContinuar" prefHeight="50.0" prefWidth="155.0" text="CONTINUAR">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.36" hue="-0.07" saturation="-0.24" />
+         </effect>
+      </Button>
+    </children>
+</AnchorPane>
